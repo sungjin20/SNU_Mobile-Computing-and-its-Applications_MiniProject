@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="10mm"
+        android:background="#0027FF"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Collection"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+        <ImageView
+            android:id="@+id/capturedimage"
+            android:layout_width="180dp"
+            android:layout_height="200dp"
+            android:layout_weight="1"
+            app:srcCompat="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="210px"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="210px"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#000000" />
+                <View
+                    android:layout_width="210px"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="29.5dp"
+                    android:background="#000000" />
+                <View
+                    android:layout_width="210px"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="29.5dp"
+                    android:background="#000000" />
+                <View
+                    android:layout_width="210px"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="29.5dp"
+                    android:background="#000000" />
+                <View
+                    android:layout_width="210px"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="29.5dp"
+                    android:background="#000000" />
+                <View
+                    android:layout_width="210px"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="29.5dp"
+                    android:background="#000000" />
+                <View
+                    android:layout_width="210px"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="29.5dp"
+                    android:background="#000000" />
+                <View
+                    android:layout_width="210px"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="29.5dp"
+                    android:background="#000000" />
+                <View
+                    android:layout_width="210px"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="27.5dp"
+                    android:background="#000000" />
+            </LinearLayout>
+
+            <androidx.camera.view.PreviewView
+                android:id="@+id/previewView"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center" />
+
+            <LinearLayout
+                android:layout_width="210px"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="210px"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="0dp"
+                    android:background="#000000" />
+                <View
+                    android:layout_width="210px"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="29.5dp"
+                    android:background="#000000" />
+                <View
+                    android:layout_width="210px"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="29.5dp"
+                    android:background="#000000" />
+                <View
+                    android:layout_width="210px"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="29.5dp"
+                    android:background="#000000" />
+                <View
+                    android:layout_width="210px"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="29.5dp"
+                    android:background="#000000" />
+                <View
+                    android:layout_width="210px"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="29.5dp"
+                    android:background="#000000" />
+                <View
+                    android:layout_width="210px"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="29.5dp"
+                    android:background="#000000" />
+                <View
+                    android:layout_width="210px"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="29.5dp"
+                    android:background="#000000" />
+                <View
+                    android:layout_width="210px"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="27.5dp"
+                    android:background="#000000" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_1"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/chooselabelbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="ChooseLabel"
+                android:text="CHOOSE LABEL" />
+
+            <Button
+                android:id="@+id/capturebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="ClickedCaptureBtn"
+                android:text="CAPTURE" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <RadioButton
+                android:id="@+id/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Black"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="White"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/none"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="None"
+                android:layout_weight="1"/>
+        </RadioGroup>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
