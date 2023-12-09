@@ -36,4 +36,4 @@ with open('./data/egaroucid_data/0000000.txt') as f:
         ind+=1
 path = './data/preprocessed_eg_data/0000000.history'
 with open(path, mode='wb') as h:
-    pickle.dump(history, h)
+    pickle.dump(all_history, h)

@@ -56,8 +56,9 @@ def residual_block(filters, strides, unit_size):
     return f
 
 def step_decay(epoch):
-    x = 0.1
-    if epoch >= 80: x = 0.01
+    x = 0.001
+    if epoch >= 10: x = 0.0005
+    if epoch >= 50: x = 0.00025
     return x
 lr_decay = LearningRateScheduler(step_decay)
 
